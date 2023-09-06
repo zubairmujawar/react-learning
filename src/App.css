@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
-  font-family: "Roboto";
+  font-family: "popines";
+}
+.conatainer{
+  margin: 0 auto;
+  max-width: 1280px;
 }

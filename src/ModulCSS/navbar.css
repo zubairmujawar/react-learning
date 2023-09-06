@@ -1,17 +1,36 @@
-nav{
-    width: 1440px;
-    height: 72px;
-    display: flex;
-    background-color: bisque;
-    justify-content: space-around;
-    align-items: center;
+nav {
+  height: 72px;
+  display: flex;
+  margin: auto;
+  /* background-color: #ededed; */
+  justify-content: space-around;
+  align-items: center;
+  
 }
-nav ul{
-    display: flex;
+nav ul {
+  display: flex;
 }
-nav ul li a{
-    text-decoration: none;
+nav ul li a {
+  text-decoration: none;
+  display: flex;
+  width: 77px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 nav ul li {
-    list-style: none;
+  list-style: none;
+}
+.loginBtn {
+  display: inline-flex;
+  padding: 6px 16px;
+  align-items: flex-start;
+  gap: 10px;
+  background: #d01c28;
+  color: #ffff;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
 }
