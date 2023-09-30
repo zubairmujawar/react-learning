@@ -1,27 +1,28 @@
 import { useState } from "react";
-import "./App.css";
 
-function App() {
-  const [color, setcolor] = useState("Black");
+function BgChanger() {
+  const [bgcolor, setbgcolor] = useState("black");
+
+  function randomColorGenretor() {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const yellow = Math.floor(Math.random() * 256);
+    const color = `rgb(${red}, ${green}, ${yellow})`;
+    return color;
+  }
+
+  const bachangerGenretor = () => {
+    const newBgColor = randomColorGenretor();
+    setbgcolor(newBgColor);
+  };
 
   return (
-    <div className="mainDiv" style={{ backgroundColor: color }}>
-      <div className="innerDiv">
-        <button onClick={()=>setcolor("red")} className="Btn" style={{ backgroundColor: "red" }}>
-          Red
-        </button>
-        <button onClick={()=>setcolor("yellow")} className="Btn" style={{ backgroundColor: "yellow" }}>
-          yellow
-        </button>
-        <button onClick={()=>setcolor("blue")} className="Btn" style={{ backgroundColor: "blue" }}>
-          blue
-        </button>
-        <button onClick={()=>setcolor("green")} className="Btn" style={{ backgroundColor: "green" }}>
-          green
-        </button>
+    <>
+      <div style={{ backgroundColor: bgcolor }}>
+        <button onClick={bachangerGenretor}>Color</button>
       </div>
-    </div>
+    </>
   );
 }
 
-export default App;
+export default BgChanger;
