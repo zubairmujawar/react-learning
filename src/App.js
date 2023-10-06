@@ -5,13 +5,15 @@ import HeroSection from './components/HeroSection';
 import BgChanger from './components/BgChanger';
 import Count from './components/Count';
 import './ModulCSS/Hero.css'
+import TestApi from './components/TestApi';
 
 function App() {
   return (
   
   <>
   {/* <BgChanger/> */}
-  <Count/>
+  {/* <Count/> */}
+  <TestApi/>
   {/* <Navbar/> */}
   {/* <HeroSection/> */}
   </>
