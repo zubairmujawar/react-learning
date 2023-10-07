@@ -6,16 +6,19 @@ import BgChanger from './components/BgChanger';
 import Count from './components/Count';
 import './ModulCSS/Hero.css'
 import TestApi from './components/TestApi';
+import PasswordGenretor from './components/PasswordGenretor';
 
 function App() {
   return (
   
   <>
-  {/* <BgChanger/> */}
-  {/* <Count/> */}
-  <TestApi/>
-  {/* <Navbar/> */}
   {/* <HeroSection/> */}
+  {/* <Navbar/> */}
+  {/* <Count/> */}
+  {/* <BgChanger/> */}
+  {/* <TestApi/> */}
+  <PasswordGenretor/>
+
   </>
   
   );

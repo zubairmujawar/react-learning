@@ -28,10 +28,10 @@ function BgChanger() {
       setinput(input.toUpperCase());
     }
   };
-  const lowerCase = () => {
-    input === ""? alert("type somthing") : 
-    setinput(input.toLowerCase());
-  };
+  // const lowerCase = () => {
+  //   input === ""? alert("type somthing") : 
+  //   setinput(input.toLowerCase());
+  // };
 
   return (
     <>
@@ -58,7 +58,7 @@ function BgChanger() {
           ></textarea>
           <div style={{display:"flex", justifyContent:"center" , alignItems:"center", gap:"8px"}}>
           <button onClick={uperCase}>Uper Case</button>
-          <button onClick={lowerCase}>Lower Case</button>
+          {/* <button onClick={lowerCase}>Lower Case</button> */}
           </div>
         </div>
       </div>
