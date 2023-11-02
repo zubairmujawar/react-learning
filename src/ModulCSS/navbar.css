@@ -19,6 +19,12 @@ nav ul li a {
   align-items: center;
   color: black;
 }
+.nav-conatainer{
+  width: 100vw;
+  height: 50px;
+  background-color: white;
+
+}
 nav ul li {
   list-style: none;
 }
@@ -33,4 +39,9 @@ nav ul li {
   cursor: pointer;
   border: none;
   border-radius: 3px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

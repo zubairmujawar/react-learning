@@ -7,20 +7,16 @@ import Count from './components/Count';
 import './ModulCSS/Hero.css'
 import TestApi from './components/TestApi';
 import PasswordGenretor from './components/PasswordGenretor';
+import Password2 from './components/Password2';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
   
   <>
-  {/* <HeroSection/> */}
-  {/* <Navbar/> */}
-  {/* <Count/> */}
-  {/* <BgChanger/> */}
-  {/* <TestApi/> */}
-  <PasswordGenretor/>
-
+  <Navbar/>
+  <Outlet/>
   </>
-  
   );
 }
 

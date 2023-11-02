@@ -1,19 +1,18 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="conatainer">
+    <nav className="nav-conatainer">
       <div className="logo"><img src="./images/nike_logo.png" alt="img"/></div>
-
+      <div>
       <ul>
-        
-        <li><a href="/">Menu</a></li>
-        <li><a href="/">Location</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Contact</a></li>
-      </ul>
-
-      <button className="loginBtn" >login</button>
+        <li> <NavLink to='/'>Home</NavLink></li>
+        <li> <NavLink to='/count'>Counter</NavLink></li>
+      </ul>  
+      </div>
+      
+      
     </nav>
     
   );

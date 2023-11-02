@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   /* border: 2px solid black; */
-  height: calc(100vh - 72px);
+  height: calc(100vh - 50px);
 }
 .leftDiv {
   /* border: 2px solid red; */

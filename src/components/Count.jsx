@@ -22,10 +22,10 @@ function Count() {
   }
 
   return (
-    <div>
+    <div className="hero conatainer countcontainer">
       <h1>{count}</h1>
-      <button onClick={countUp}>Up</button>
-      <button onClick={countDown}>Down</button>
+      <button className="button" onClick={countUp}>Up</button>
+      <button className="button" onClick={countDown}>Down</button>
       <br/>
       <input type="range" max={5} min={0} onChange={(e)=>setCount(e.target.value)}/>
     </div>

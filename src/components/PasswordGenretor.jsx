@@ -7,30 +7,28 @@ const PasswordGenretor = () => {
   const [password, setpassword] = useState("");
 
   //useRef hook
-  const passWordRef = useRef(null)
+  const passWordRef = useRef(null);
 
   const passGenretor = useCallback(() => {
     let pass = "";
     let str = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
-    if (numAllowed) str += "1234567890";
-    if (charAllowed) str += "<>?/=+-()[]|,.%$#@!";
+    if (numAllowed) pass += "1234567890";
+    if (charAllowed) pass += "!@#$%^&*()_+";
 
     for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
       pass += str.charAt(char);
     }
     setpassword(pass);
-
   }, [length, setcharAllowed, setnumAllowed, setpassword]);
 
   // for copy the password to clip password
-  const copyPassword = useCallback(()=>{
+  const copyPassword = useCallback(() => {
     passWordRef.current?.select();
     passWordRef.current?.setSelectionRange(0, 10);
     window.navigator.clipboard.writeText(password);
-  }, [password])
-
+  }, [password]);
 
   useEffect(() => {
     passGenretor();
@@ -39,11 +37,15 @@ const PasswordGenretor = () => {
   return (
     <div className="PaasDiv">
       <div className="">
-        <input type="text" className="counterInput"
-         value={password}  ref={passWordRef}/>
-        <button className="Btn"
-        onClick={copyPassword}
-        >copy</button>
+        <input
+          type="text"
+          className="counterInput"
+          value={password}
+          ref={passWordRef}
+        />
+        <button className="Btn" onClick={copyPassword}>
+          copy
+        </button>
       </div>
 
       <div className="itemsDiv">
@@ -51,7 +53,6 @@ const PasswordGenretor = () => {
         <input
           type="range"
           max={20}
-          min={2}
           value={length}
           onChange={(e) => setlength(e.target.value)}
         />
@@ -61,16 +62,14 @@ const PasswordGenretor = () => {
           defaultChecked={numAllowed}
           onChange={() => setnumAllowed((prev) => !prev)}
         />
-        <label htmlFor="num" />
-        Num
+        <label htmlFor="Num">Number</label>
         <input
           type="checkbox"
           className="checkbox"
           defaultChecked={charAllowed}
           onChange={() => setcharAllowed((prev) => !prev)}
         />
-        <label htmlFor="cher" />
-        Characters
+        <label htmlFor="Cher">Charecter</label>
       </div>
     </div>
   );
