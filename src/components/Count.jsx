@@ -11,6 +11,10 @@ function Count() {
       setCount(count + 1);
     }
   }
+  function handelInput (e) {
+    const value = parseInt(e.target.value, 10)
+    setCount(value)
+  }
 
   function countDown() {
     
@@ -27,7 +31,7 @@ function Count() {
       <button className="button" onClick={countUp}>Up</button>
       <button className="button" onClick={countDown}>Down</button>
       <br/>
-      <input type="range" max={5} min={0} onChange={(e)=>setCount(e.target.value)}/>
+      <input type="range" max={5} min={0} onChange={handelInput}/>
     </div>
   );
 }
