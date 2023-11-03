@@ -10,6 +10,7 @@ export default function Navbar() {
         <li> <NavLink to='/'>Home</NavLink></li>
         <li> <NavLink to='/count'>Counter</NavLink></li>
         <li> <NavLink to='/PasswordGenretor'>Password</NavLink></li>
+        <li> <NavLink to='/login'>login</NavLink></li>
       </ul>  
       </div>
       
