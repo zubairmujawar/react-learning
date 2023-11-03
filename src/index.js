@@ -21,6 +21,10 @@ const router = createBrowserRouter ([
       {
         path: 'count',
         element: <Count/>
+      },
+      {
+        path: 'PasswordGenretor',
+        element: <PasswordGenretor/>
       }
     ]
   }

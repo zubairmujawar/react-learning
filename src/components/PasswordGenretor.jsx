@@ -35,7 +35,7 @@ const PasswordGenretor = () => {
   }, [length, numAllowed, charAllowed, passGenretor]);
 
   return (
-    <div className="PaasDiv">
+    <div className="PaasDiv" style={{height: "calc(100vh - 50px)"}} >
       <div className="">
         <input
           type="text"
@@ -43,7 +43,7 @@ const PasswordGenretor = () => {
           value={password}
           ref={passWordRef}
         />
-        <button className="Btn" onClick={copyPassword}>
+        <button className="Btn button" onClick={copyPassword}>
           copy
         </button>
       </div>

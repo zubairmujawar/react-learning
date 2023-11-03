@@ -27,6 +27,7 @@ nav ul li a {
 }
 nav ul li {
   list-style: none;
+  margin: 6px;
 }
 .loginBtn {
   display: inline-flex;

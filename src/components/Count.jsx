@@ -11,15 +11,15 @@ function Count() {
       setCount(count + 1);
     }
   }
+  // for input handler 
   function handelInput (e) {
-    const value = parseInt(e.target.value, 10)
+    const value = parseInt(e.target.value, 10) //parseInt(string, radix -> it is potional)
     setCount(value)
   }
 
   function countDown() {
-    
     if (count === 0) {
-      alert("Last Number is 0");
+      alert("Minimum Number is 0");
     }else{
       setCount(count - 1);
     }

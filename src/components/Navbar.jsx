@@ -9,6 +9,7 @@ export default function Navbar() {
       <ul>
         <li> <NavLink to='/'>Home</NavLink></li>
         <li> <NavLink to='/count'>Counter</NavLink></li>
+        <li> <NavLink to='/PasswordGenretor'>Password</NavLink></li>
       </ul>  
       </div>
       
