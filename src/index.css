@@ -79,3 +79,8 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+.input{
+  padding: 8px;
+  margin: 5px;
+}

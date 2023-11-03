@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import PasswordGenretor from './components/PasswordGenretor';
 import Password2 from './components/Password2';
 import Count from './components/Count';
+import Login from './components/Login';
 
 const router = createBrowserRouter ([
   {
@@ -23,8 +24,12 @@ const router = createBrowserRouter ([
         element: <Count/>
       },
       {
-        path: 'PasswordGenretor',
+        path: 'passwordgenretor',
         element: <PasswordGenretor/>
+      },
+      {
+        path: 'login',
+        element: <Login/>
       }
     ]
   }
