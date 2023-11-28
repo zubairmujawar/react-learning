@@ -12,8 +12,8 @@ export default function HeroSection() {
             SHOES
           </p>
           <div className="hero-btn">
-          <button className=" ShopBtn">Shop Now</button>
-          <button className="CategoryBtn ">Category</button>
+            <button className=" ShopBtn">Shop Now</button>
+            <button className="CategoryBtn ">Category</button>
           </div>
           <div className="shopping">
             <p>Also Available On</p>
